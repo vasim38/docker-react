@@ -7,7 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        Welcome to Docker 1.2
         <p>
+
+
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -16,7 +19,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React - THis is my version
         </a>
       </header>
     </div>
