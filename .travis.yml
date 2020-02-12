@@ -6,14 +6,13 @@ before_install:
 
 script:
   - docker run vasim38/docker-react npm run test -- --coverage
-deploy:
-  edge: true
+deploy:--
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "docker-react-1"
+  app: "docker-cicd"
   env: "DockerCicd-env"
   bucket_name: "elasticbeanstalk-us-east-1-484214507756"
-  bucket_path: "docker-react-1" # First time it should be same as app name
+  bucket_path: "docker-cicd" # First time it should be same as app name
   on:
     branch: master
   access_key_id: AWS_ACCESS_KEY
